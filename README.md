@@ -100,7 +100,9 @@ sceKernelVirtualQuery
 sceKernelGetCpumode
 sceKernelIsNeoMode
 sceKernelSetFsstParam
-Thread Management
+```
+#Thread Management
+```
 sceKernelGetCurrentCpu
 sceKernelNanosleep
 sceKernelSleep
