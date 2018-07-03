@@ -101,7 +101,7 @@ sceKernelGetCpumode
 sceKernelIsNeoMode
 sceKernelSetFsstParam
 ```
-#Thread Management
+# Thread Management
 ```
 sceKernelGetCurrentCpu
 sceKernelNanosleep
@@ -155,7 +155,9 @@ scePthreadSetschedparam
 scePthreadSetspecific
 scePthreadTestcancel
 scePthreadYield
-Process Management
+```
+# Process Management
+```
 sceUserMainThreadName
 sceUserMainThreadPriority
 ```
@@ -190,7 +192,9 @@ scePthreadMutexattrInit
 scePthreadMutexattrSetprioceiling
 scePthreadMutexattrSetprotocol
 scePthreadMutexattrSettype
-Condition Variables
+```
+# Condition Variables
+```
 scePthreadCondBroadcast
 scePthreadCondDestroy
 scePthreadCondInit
@@ -459,7 +463,6 @@ SLV_RWLOCK_WRLOCK_DESTROYED
 # Other Exceptions
 ```
 SIGPIPE
-Block Reason Codes
 ```
 #Kernel Primitives
 ```
