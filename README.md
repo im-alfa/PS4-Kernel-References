@@ -478,7 +478,7 @@ WAIT_PTHREAD_RWLOCK_RD
 WAIT_PTHREAD_RWLOCK_WR
 WAIT_USER
 ```
-#System Software
+# System Software
 ```
 WAIT_SERVICE
 ```
