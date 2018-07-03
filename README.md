@@ -1,7 +1,9 @@
 # PS4-Kernel-References
 
 
-#Time Management
+# Time Management
+
+```
 
 SceKernelTimespec
 SceKernelTimeval
@@ -13,9 +15,10 @@ sceKernelGetProcessTimeCounterFrequency
 sceKernelGetTscFrequency
 sceKernelGettimeofday
 sceKernelReadTsc
+```
 
 # Event Queues
-
+```
 sceKernelAddFileEvent
 sceKernelAddHRTimerEvent
 sceKernelAddReadEvent
@@ -39,9 +42,10 @@ sceKernelGetEventId
 sceKernelGetEventUserData
 sceKernelTriggerUserEvent
 sceKernelWaitEqueue
+```
 
 # Memory Management
-
+```
 SCE_KERNEL_EXTENDED_CPU_PAGE_TABLE_POOL
 SCE_KERNEL_EXTENDED_GPU_PAGE_TABLE_POOL
 SCE_KERNEL_FLEXIBLE_MEMORY_SIZE
@@ -87,9 +91,9 @@ sceKernelReserveVirtualRange
 sceKernelSetPrtAperture
 sceKernelSetVirtualRangeName
 sceKernelVirtualQuery
-
+```
 # CPU Management
-
+```
 sceKernelGetCpumode
 sceKernelIsNeoMode
 sceKernelSetFsstParam
@@ -149,22 +153,22 @@ scePthreadYield
 Process Management
 sceUserMainThreadName
 sceUserMainThreadPriority
-
+```
 # Dynamic Libraries
-
+```
 SceKernelLoadModuleOpt
 SceKernelUnloadModuleOpt
 sceKernelDlsym
 sceKernelLoadStartModule
 sceKernelStopUnloadModule
-
+```
 # UUID
-
+```
 SceKernelUuid
 sceKernelUuidCreate
-
+```
 # Mutexes
-
+```
 scePthreadMutexDestroy
 scePthreadMutexGetprioceiling
 scePthreadMutexInit
@@ -191,9 +195,9 @@ scePthreadCondTimedwait
 scePthreadCondWait
 scePthreadCondattrDestroy
 scePthreadCondattrInit
-
+```
 # Read/write Locks
-
+```
 scePthreadRwlockDestroy
 scePthreadRwlockInit
 scePthreadRwlockRdlock
@@ -207,17 +211,17 @@ scePthreadRwlockattrDestroy
 scePthreadRwlockattrGettype
 scePthreadRwlockattrInit
 scePthreadRwlockattrSettype
-
+```
 # Barriers
-
+```
 scePthreadBarrierDestroy
 scePthreadBarrierInit
 scePthreadBarrierWait
 scePthreadBarrierattrDestroy
 scePthreadBarrierattrInit
-
+```
 #Event Flags
-
+```
 SceKernelEventFlagOptParam
 sceKernelCancelEventFlag
 sceKernelClearEventFlag
@@ -226,9 +230,9 @@ sceKernelDeleteEventFlag
 sceKernelPollEventFlag
 sceKernelSetEventFlag
 sceKernelWaitEventFlag
-
+```
 # Semaphores
-
+```
 SceKernelSemaOptParam
 sceKernelCancelSema
 sceKernelCreateSema
@@ -236,9 +240,9 @@ sceKernelDeleteSema
 sceKernelPollSema
 sceKernelSignalSema
 sceKernelWaitSema
-
+```
 # POSIX Semaphores
-
+```
 scePthreadSemDestroy
 scePthreadSemGetvalue
 scePthreadSemInit
@@ -246,9 +250,9 @@ scePthreadSemPost
 scePthreadSemTimedwait
 scePthreadSemTrywait
 scePthreadSemWait
-
+```
 #File System
-
+```
 SceKernelDirent
 SceKernelIovec
 SceKernelStat
@@ -284,17 +288,17 @@ sceKernelUnlink
 sceKernelUtimes
 sceKernelWrite
 sceKernelWritev
-
+```
 # File System (Large Writes)
-
+```
 sceKernelLwfsAllocateBlock
 sceKernelLwfsLseek
 sceKernelLwfsSetAttribute
 sceKernelLwfsTrimBlock
 sceKernelLwfsWrite
-
+```
 # File System (Asynchronous I/O)
-
+```
 SCE_KERNEL_AIO_*_NUM_MAX
 SCE_KERNEL_AIO_STATE_*
 SceKernelAioParam
@@ -317,14 +321,14 @@ sceKernelAioSubmitWriteCommands
 sceKernelAioSubmitWriteCommandsMultiple
 sceKernelAioWaitRequest
 sceKernelAioWaitRequests
-
+```
 # Development Support
-
+```
 sceKernelGetGPI
 sceKernelSetGPO
-
+```
 # Exception Reason Codes
-
+```
 System Software and Compiler Runtime (SYSTEM)
 SYSTEM_ABNORMAL_TERMINATION_REQUEST
 SYSTEM_ASAN_ASSERT
@@ -346,31 +350,31 @@ SYSTEM_SUSPEND_BLOCK_TIMEOUT_ASYNC
 SYSTEM_TRIGGER_COREDUMP_REQUEST
 SYSTEM_USER_DEBUG_REQUEST_ASYNC
 SYSTEM_WRITE_ADDRESS_WRAPAROUND
-
+```
 #CPU Exceptions
-
+```
 SIGBUS
 SIGFPE
 SIGILL
 SIGSEGV
 SIGTRAP
-
+```
 # GPU Exceptions
-
+```
 CPU_FAULT_*
 GPU_FAULT_*
-
+```
 # Dynamic Libraries (PRX)
-
+```
 PRX_INVALID_IMAGE
 PRX_NOT_RESOLVED_FUNCTION
 PRX_PROCESS_STARTUP_FAILURE
 PRX_RUNTIME_ERROR
 PRX_SCE_MODULE_LOAD_ERROR
 PRX_TLS_ALLOC_ERROR
-
+```
 # Standard Libraries (LIBC)
-
+```
 LIBC_ABORT
 LIBC_ASSERT
 LIBC_EXIT_FAIL
@@ -392,9 +396,9 @@ LIBC_TERMINATE
 LIBC_UNEXPECTED
 LIBC__EXIT_FAIL
 LIBC__EXIT_SUCCESS
-
+```
 # SLV (System Library Verification) Exceptions
-
+```
 SLV_BARRIER_DESTROY_DESTROYED
 SLV_BARRIER_DESTROY_IN_USE
 SLV_BARRIER_WAIT_DESTROYED
@@ -446,14 +450,14 @@ SLV_RWLOCK_TRYWRLOCK_DESTROYED
 SLV_RWLOCK_UNLOCK_DESTROYED
 SLV_RWLOCK_UNLOCK_NOT_OWNED
 SLV_RWLOCK_WRLOCK_DESTROYED
-
+```
 # Other Exceptions
-
+```
 SIGPIPE
 Block Reason Codes
-
+```
 #Kernel Primitives
-
+```
 WAIT_EQUEUE
 WAIT_EVENTFLAG
 WAIT_INTERNAL
@@ -463,9 +467,9 @@ WAIT_OTHER
 WAIT_SEMAPHORE
 WAIT_SLEEP
 WAIT_THREAD_SUSPEND
-
+```
 # SDK API
-
+```
 WAIT_PTHREAD_BARRIER
 WAIT_PTHREAD_CONDVAR
 WAIT_PTHREAD_JOIN
@@ -474,7 +478,8 @@ WAIT_PTHREAD_RUNTIME
 WAIT_PTHREAD_RWLOCK_RD
 WAIT_PTHREAD_RWLOCK_WR
 WAIT_USER
-
+```
 #System Software
-
+```
 WAIT_SERVICE
+```
