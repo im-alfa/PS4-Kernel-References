@@ -464,7 +464,7 @@ SLV_RWLOCK_WRLOCK_DESTROYED
 ```
 SIGPIPE
 ```
-#Kernel Primitives
+# Kernel Primitives
 ```
 WAIT_EQUEUE
 WAIT_EVENTFLAG
