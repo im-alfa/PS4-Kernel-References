@@ -219,7 +219,7 @@ scePthreadBarrierWait
 scePthreadBarrierattrDestroy
 scePthreadBarrierattrInit
 ```
-#Event Flags
+# Event Flags
 ```
 SceKernelEventFlagOptParam
 sceKernelCancelEventFlag
@@ -250,7 +250,7 @@ scePthreadSemTimedwait
 scePthreadSemTrywait
 scePthreadSemWait
 ```
-#File System
+# File System
 ```
 SceKernelDirent
 SceKernelIovec
@@ -350,7 +350,7 @@ SYSTEM_TRIGGER_COREDUMP_REQUEST
 SYSTEM_USER_DEBUG_REQUEST_ASYNC
 SYSTEM_WRITE_ADDRESS_WRAPAROUND
 ```
-#CPU Exceptions
+# CPU Exceptions
 ```
 SIGBUS
 SIGFPE
