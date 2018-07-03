@@ -4,7 +4,6 @@
 # Time Management
 
 ```
-
 SceKernelTimespec
 SceKernelTimeval
 sceKernelClockGetres
